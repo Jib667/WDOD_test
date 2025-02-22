@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Dogs of Democracy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        nav {
+            width: 100%;
+            background-color: white;
+            padding: 15px 30px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #87CEEB;
+        }
+    </style>
+</head>
+<body style="background: url('./img/capitol-background.jpg') no-repeat center center fixed; background-size: cover; margin: 0; min-height: 100vh; position: relative;">
+    <nav>
+        <h3 style="margin: 0; font-weight: 600; color: #333;">Watch Dogs of Democracy</h3>
+        <div class="nav-links">
+            <a href="./pages/house.html">House of Representatives</a>
+            <a href="./pages/senate.html">Senate</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="main-content">
+            <h1>Watch Dogs of Democracy</h1>
+            <div class="content-section">
+                <h2>Monitoring Congress for the People</h2>
+                <p>Track and analyze congressional activities in both chambers of Congress</p>
+                <div class="navigation-buttons">
+                    <a href="./pages/house.html" class="btn btn-primary btn-lg">Explore House</a>
+                    <a href="./pages/senate.html" class="btn btn-primary btn-lg">Explore Senate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
