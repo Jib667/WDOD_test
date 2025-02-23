@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+=<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House of Representatives</title>
+    <title>The House of Representatives</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="../css/styles.css">
@@ -66,7 +66,13 @@
 </head>
 <body>
     <nav>
-        <h3 style="margin: 0; font-weight: 600; color: #333;">Watch Dogs of Democracy</h3>
+        <div class="nav-brand">
+            <img src="../img/FWD_logo.png" alt="FWD Logo" class="nav-logo">
+            <div class="nav-title-group">
+                <h3>Watchdogs of Democracy</h3>
+                <span class="nav-subtitle">a project made by the Young Forwardists</span>
+            </div>
+        </div>
         <div class="nav-links">
             <a href="../index.html">Home</a>
             <a href="./house.html">House of Representatives</a>
@@ -75,17 +81,17 @@
     </nav>
     <div class="container">
         <header>
-            <h1>House of Representatives</h1>
+            <h1>The House of Representatives</h1>
         </header>
         <main>
             <div class="row">
                 <div class="col-md-12">
                     <h2>About the House</h2>
-                    <p>The House of Representatives is one of the two chambers of the United States Congress.</p>
+                    <p>Welcome to the House of Representatives page. Here you can find information about the House, its members, and its functions as the lower chamber of Congress.</p>
                 </div>
             </div>
             <div class="map-section">
-                <div id="house-map"></div>
+                <div id="senate-map"></div>
             </div>
             <style>
             .map-section {
@@ -95,7 +101,7 @@
                 border-radius: 12px;
                 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             }
-            #house-map {
+            #senate-map {
                 height: 600px;
                 width: 100%;
                 border-radius: 8px;
@@ -106,30 +112,81 @@
             </style>
             <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
             <script>
-                const map = L.map('house-map', {
-                    minZoom: 3,
-                    maxZoom: 6,
-                    maxBounds: [
-                        [20, -180], // Southwest coordinates (includes Hawaii)
-                        [72, -50]  // Northeast coordinates
-                    ],
-                    maxBoundsViscosity: 1.0,
-                    wheelPxPerZoomLevel: 120, // Adjust zoom sensitivity
-                    zoomSnap: 1.0 // Ensure smooth zoom levels
-                }).setView([40, -98], 4);
+                const map = L.map('senate-map').setView([37.8, -96], 4);
                 
+                const stateDistricts = {
+                    'Alabama': 7,
+                    'Alaska': 1,
+                    'Arizona': 9,
+                    'Arkansas': 4,
+                    'California': 52,
+                    'Colorado': 8,
+                    'Connecticut': 5,
+                    'Delaware': 1,
+                    'Florida': 28,
+                    'Georgia': 14,
+                    'Hawaii': 2,
+                    'Idaho': 2,
+                    'Illinois': 17,
+                    'Indiana': 9,
+                    'Iowa': 4,
+                    'Kansas': 4,
+                    'Kentucky': 6,
+                    'Louisiana': 6,
+                    'Maine': 2,
+                    'Maryland': 8,
+                    'Massachusetts': 9,
+                    'Michigan': 13,
+                    'Minnesota': 8,
+                    'Mississippi': 4,
+                    'Missouri': 8,
+                    'Montana': 2,
+                    'Nebraska': 3,
+                    'Nevada': 4,
+                    'New Hampshire': 2,
+                    'New Jersey': 12,
+                    'New Mexico': 3,
+                    'New York': 26,
+                    'North Carolina': 14,
+                    'North Dakota': 1,
+                    'Ohio': 15,
+                    'Oklahoma': 5,
+                    'Oregon': 6,
+                    'Pennsylvania': 17,
+                    'Rhode Island': 2,
+                    'South Carolina': 7,
+                    'South Dakota': 1,
+                    'Tennessee': 9,
+                    'Texas': 38,
+                    'Utah': 4,
+                    'Vermont': 1,
+                    'Virginia': 11,
+                    'Washington': 10,
+                    'West Virginia': 2,
+                    'Wisconsin': 8,
+                    'Wyoming': 1
+                };
+
+                function createDistrictsList(stateName) {
+                    const districts = stateDistricts[stateName];
+                    if (!districts) return '';
+                    
+                    let list = `<h4>${stateName}</h4><div class="districts-container"><ul style="list-style-type: none; padding: 0; margin: 10px 0;">`;
+                    for (let i = 1; i <= districts; i++) {
+                        list += `<li style="padding: 5px 0;">District ${i}</li>`;
+                    }
+                    list += '</ul></div>';
+                    return list;
+                }
+
                 // Use CartoDB Positron for a clean, white base map
                 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-                    minZoom: 3,
-                    maxZoom: 8,
-                    bounds: [
-                        [20, -180], // Southwest coordinates
-                        [72, -50]   // Northeast coordinates
-                    ],
-                    attribution: '© OpenStreetMap contributors, © CARTO'
+                    maxZoom: 19,
+                    attribution: '© OpenStreetMap contributors, © CARTO',
+                    className: 'map-tiles'
                 }).addTo(map);
-            
-                // Add custom styles for a simplified, purple-themed map
+
+                // Add custom styles for popups
                 const style = document.createElement('style');
                 style.textContent = `
                     .map-tiles {
@@ -138,41 +195,117 @@
                     .leaflet-container {
                         background: white !important;
                     }
-                    .district-label {
+                    .state-label {
                         color: #4B0082;
                         font-weight: bold;
                         font-size: 14px;
                         text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
                     }
+                    .leaflet-popup-content-wrapper {
+                        background: white;
+                        color: #333;
+                        border-radius: 8px;
+                        box-shadow: 0 2px 10px rgba(75, 0, 130, 0.2);
+                    }
+                    .leaflet-popup-content {
+                        margin: 15px;
+                        min-width: 200px;
+                    }
+                    .leaflet-popup-content h4 {
+                        color: #4B0082;
+                        margin: 0 0 10px;
+                        font-family: 'League Gothic', sans-serif;
+                        font-size: 1.5em;
+                        text-transform: uppercase;
+                        letter-spacing: 0.05em;
+                    }
+                    .leaflet-popup-tip {
+                        background: white;
+                    }
+                    .districts-container {
+                        max-height: 300px;
+                        overflow-y: auto;
+                        scrollbar-width: thin;
+                        scrollbar-color: #4B0082 #f0f0f0;
+                    }
+                    .districts-container::-webkit-scrollbar {
+                        width: 8px;
+                    }
+                    .districts-container::-webkit-scrollbar-track {
+                        background: #f0f0f0;
+                        border-radius: 4px;
+                    }
+                    .districts-container::-webkit-scrollbar-thumb {
+                        background-color: #4B0082;
+                        border-radius: 4px;
+                    }
                 `;
                 document.head.appendChild(style);
-            
-                // Add all congressional districts with purple styling
-                fetch('https://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_us_cd116_500k.json')
+
+                // Add state boundaries with purple styling and click events
+                fetch('https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json')
                     .then(response => response.json())
                     .then(data => {
                         L.geoJSON(data, {
                             style: {
                                 color: '#4B0082',
                                 weight: 2,
-                                opacity: 0.9,
+                                opacity: 0.8,
                                 fillColor: '#4B0082',
-                                fillOpacity: 0.15,
-                                dashArray: null
+                                fillOpacity: 0.1
                             },
                             onEachFeature: function(feature, layer) {
-                                if (feature.properties && feature.properties.district) {
-                                    layer.bindTooltip(`District ${feature.properties.district}`, {
-                                        permanent: false,
-                                        direction: 'center',
-                                        className: 'district-label'
-                                    });
+                                const stateName = feature.properties.name;
+                                layer.bindPopup(createDistrictsList(stateName));
+                                // Add permanent state label, excluding DC
+                                if (stateName !== 'District of Columbia') {
+                                    const center = layer.getBounds().getCenter();
+                                    const stateAbbr = getStateAbbreviation(stateName);
+                                    L.marker(center, {
+                                        icon: L.divIcon({
+                                            className: 'state-label',
+                                            html: stateAbbr,
+                                            iconSize: [30, 10],
+                                            iconAnchor: [15, 5]
+                                        })
+                                    }).addTo(map);
                                 }
+                                
+                                layer.on('mouseover', function (e) {
+                                    this.setStyle({
+                                        fillOpacity: 0.3
+                                    });
+                                });
+                                
+                                layer.on('mouseout', function (e) {
+                                    this.setStyle({
+                                        fillOpacity: 0.1
+                                    });
+                                });
                             }
                         }).addTo(map);
                     });
+
+                // Add state abbreviation helper function
+                function getStateAbbreviation(stateName) {
+                    const stateAbbreviations = {
+                        'Alabama': 'AL', 'Alaska': 'AK', 'Arizona': 'AZ', 'Arkansas': 'AR',
+                        'California': 'CA', 'Colorado': 'CO', 'Connecticut': 'CT', 'Delaware': 'DE',
+                        'Florida': 'FL', 'Georgia': 'GA', 'Hawaii': 'HI', 'Idaho': 'ID',
+                        'Illinois': 'IL', 'Indiana': 'IN', 'Iowa': 'IA', 'Kansas': 'KS',
+                        'Kentucky': 'KY', 'Louisiana': 'LA', 'Maine': 'ME', 'Maryland': 'MD',
+                        'Massachusetts': 'MA', 'Michigan': 'MI', 'Minnesota': 'MN', 'Mississippi': 'MS',
+                        'Missouri': 'MO', 'Montana': 'MT', 'Nebraska': 'NE', 'Nevada': 'NV',
+                        'New Hampshire': 'NH', 'New Jersey': 'NJ', 'New Mexico': 'NM', 'New York': 'NY',
+                        'North Carolina': 'NC', 'North Dakota': 'ND', 'Ohio': 'OH', 'Oklahoma': 'OK',
+                        'Oregon': 'OR', 'Pennsylvania': 'PA', 'Rhode Island': 'RI', 'South Carolina': 'SC',
+                        'South Dakota': 'SD', 'Tennessee': 'TN', 'Texas': 'TX', 'Utah': 'UT',
+                        'Vermont': 'VT', 'Virginia': 'VA', 'Washington': 'WA', 'West Virginia': 'WV',
+                        'Wisconsin': 'WI', 'Wyoming': 'WY'
+                    };
+                    return stateAbbreviations[stateName] || stateName;
+                }
             </script>
-            <p>Welcome to the House of Representatives page. Here you can find information about the members, legislation, and activities of the House.</p>
         </main>
         <footer>
             <p>&copy; 2023 Congress Website</p>
