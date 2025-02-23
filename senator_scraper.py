@@ -41,9 +41,9 @@ class SenatorScraper:
             )
             
             # Extract platform information
-            if crawl_status and crawl_status.result and crawl_status.result.data:
-                # Access the scraped data from the CrawlResult object
-                scraped_data = crawl_status.result.data
+            if isinstance(crawl_status, dict) and 'result' in crawl_status and 'data' in crawl_status['result']:
+                # Access the scraped data from the dictionary
+                scraped_data = crawl_status['result']['data']
                 platform_data['platform'] = [scraped_data]  # Save the scraped data to the platform list
             else:
                 platform_data['platform'] = ["No data found"]
