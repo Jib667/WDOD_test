@@ -2749,7 +2749,6 @@
                     return list;
                 }
 
-                // Add click event listeners for state interactions
                 fetch('../data/us-states.json')
                     .then(response => response.json())
                     .then(data => {
@@ -2796,7 +2795,6 @@
                     className: 'map-tiles'
                 }).addTo(map);
 
-                // Add custom styles for popups
                 const style = document.createElement('style');
                 style.textContent = `
                     .map-tiles {
@@ -2947,7 +2945,6 @@
                 `;
                 document.head.appendChild(style);
 
-                // Add state boundaries with purple styling and click events
                 fetch('https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json')
                     .then(response => response.json())
                     .then(data => {
@@ -2963,7 +2960,6 @@
                             onEachFeature: function(feature, layer) {
                                 const stateName = feature.properties.name;
                                 layer.bindPopup(createDistrictsList(stateName));
-                                // Add permanent state label, excluding DC
                                 if (stateName !== 'District of Columbia') {
                                     const center = layer.getBounds().getCenter();
                                     const stateAbbr = getStateAbbreviation(stateName);
@@ -2992,7 +2988,6 @@
                         }).addTo(map);
                     });
 
-                // Add state abbreviation helper function
                 function getStateAbbreviation(stateName) {
                     const stateAbbreviations = {
                         'Alabama': 'AL', 'Alaska': 'AK', 'Arizona': 'AZ', 'Arkansas': 'AR',

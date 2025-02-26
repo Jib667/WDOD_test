@@ -1,0 +1,488 @@
+[
+  {
+    "name": "Barry Moore",
+    "state": "Alabama",
+    "district": "District 1",
+    "website": "https://barrymoore.house.gov"
+  },
+  {
+    "name": "Shomari Figures",
+    "state": "Alabama",
+    "district": "District 2",
+    "website": "https://figures.house.gov"
+  },
+  {
+    "name": "Mike Rogers",
+    "state": "Alabama",
+    "district": "District 3",
+    "website": "https://mikerogers.house.gov"
+  },
+  {
+    "name": "Robert Aderholt",
+    "state": "Alabama",
+    "district": "District 4",
+    "website": "https://aderholt.house.gov"
+  },
+  {
+    "name": "Dale Strong",
+    "state": "Alabama",
+    "district": "District 5",
+    "website": "https://strong.house.gov"
+  },
+  {
+    "name": "Gary Palmer",
+    "state": "Alabama",
+    "district": "District 6",
+    "website": "https://palmer.house.gov"
+  },
+  {
+    "name": "Terri Sewell",
+    "state": "Alabama",
+    "district": "District 7",
+    "website": "https://sewell.house.gov"
+  },
+  {
+    "name": "Nick Begich",
+    "state": "Alaska",
+    "district": "District At-Large",
+    "website": "https://begich.house.gov"
+  },
+  {
+    "name": "David Schweikert",
+    "state": "Arizona",
+    "district": "District 1",
+    "website": "https://schweikert.house.gov"
+  },
+  {
+    "name": "Elijah Crane",
+    "state": "Arizona",
+    "district": "District 2",
+    "website": "https://crane.house.gov"
+  },
+  {
+    "name": "Yassamin Ansari",
+    "state": "Arizona",
+    "district": "District 3",
+    "website": "https://ansari.house.gov"
+  },
+  {
+    "name": "Greg Stanton",
+    "state": "Arizona",
+    "district": "District 4",
+    "website": "https://stanton.house.gov"
+  },
+  {
+    "name": "Andy Biggs",
+    "state": "Arizona",
+    "district": "District 5",
+    "website": "https://biggs.house.gov"
+  },
+  {
+    "name": "Juan Ciscomani",
+    "state": "Arizona",
+    "district": "District 6",
+    "website": "https://ciscomani.house.gov"
+  },
+  {
+    "name": "Raúl Grijalva",
+    "state": "Arizona",
+    "district": "District 7",
+    "website": "https://grijalva.house.gov"
+  },
+  {
+    "name": "Abaraham Hamadeh",
+    "state": "Arizona",
+    "district": "District 8",
+    "website": "https://hamadeh.house.gov"
+  },
+  {
+    "name": "Paul Gosar",
+    "state": "Arizona",
+    "district": "District 9",
+    "website": "https://gosar.house.gov"
+  },
+  {
+    "name": "Rick Crawford",
+    "state": "Arkansas",
+    "district": "District 1",
+    "website": "https://crawford.house.gov"
+  },
+  {
+    "name": "J. Hill",
+    "state": "Arkansas",
+    "district": "District 2",
+    "website": "https://hill.house.gov"
+  },
+  {
+    "name": "Steve Womack",
+    "state": "Arkansas",
+    "district": "District 3",
+    "website": "https://womack.house.gov"
+  },
+  {
+    "name": "Bruce Westerman",
+    "state": "Arkansas",
+    "district": "District 4",
+    "website": "https://westerman.house.gov"
+  },
+  {
+    "name": "Doug LaMalfa",
+    "state": "California",
+    "district": "District 1",
+    "website": "https://lamalfa.house.gov"
+  },
+  {
+    "name": "Jared Huffman",
+    "state": "California",
+    "district": "District 2",
+    "website": "https://huffman.house.gov"
+  },
+  {
+    "name": "Kevin Kiley",
+    "state": "California",
+    "district": "District 3",
+    "website": "https://kiley.house.gov"
+  },
+  {
+    "name": "Mike Thompson",
+    "state": "California",
+    "district": "District 4",
+    "website": "https://thompson.house.gov"
+  },
+  {
+    "name": "Tom McClintock",
+    "state": "California",
+    "district": "District 5",
+    "website": "https://mcclintock.house.gov"
+  },
+  {
+    "name": "Ami Bera",
+    "state": "California",
+    "district": "District 6",
+    "website": "https://bera.house.gov"
+  },
+  {
+    "name": "Doris Matsui",
+    "state": "California",
+    "district": "District 7",
+    "website": "https://matsui.house.gov"
+  },
+  {
+    "name": "John Garamendi",
+    "state": "California",
+    "district": "District 8",
+    "website": "https://garamendi.house.gov"
+  },
+  {
+    "name": "Josh Harder",
+    "state": "California",
+    "district": "District 9",
+    "website": "https://harder.house.gov"
+  },
+  {
+    "name": "Mark DeSaulnier",
+    "state": "California",
+    "district": "District 10",
+    "website": "https://desaulnier.house.gov"
+  },
+  {
+    "name": "Nancy Pelosi",
+    "state": "California",
+    "district": "District 11",
+    "website": "https://pelosi.house.gov"
+  },
+  {
+    "name": "Lateefah Simon",
+    "state": "California",
+    "district": "District 12",
+    "website": "https://simon.house.gov"
+  },
+  {
+    "name": "Adam Gray",
+    "state": "California",
+    "district": "District 13",
+    "website": "https://gray.house.gov"
+  },
+  {
+    "name": "Eric Swalwell",
+    "state": "California",
+    "district": "District 14",
+    "website": "https://swalwell.house.gov"
+  },
+  {
+    "name": "Kevin Mullin",
+    "state": "California",
+    "district": "District 15",
+    "website": "https://mullin.house.gov"
+  },
+  {
+    "name": "Sam Liccardo",
+    "state": "California",
+    "district": "District 16",
+    "website": "https://liccardo.house.gov"
+  },
+  {
+    "name": "Ro Khanna",
+    "state": "California",
+    "district": "District 17",
+    "website": "https://khanna.house.gov"
+  },
+  {
+    "name": "Zoe Lofgren",
+    "state": "California",
+    "district": "District 18",
+    "website": "https://lofgren.house.gov"
+  },
+  {
+    "name": "Jimmy Panetta",
+    "state": "California",
+    "district": "District 19",
+    "website": "https://panetta.house.gov"
+  },
+  {
+    "name": "Vince Fong",
+    "state": "California",
+    "district": "District 20",
+    "website": "https://fong.house.gov"
+  },
+  {
+    "name": "Jim Costa",
+    "state": "California",
+    "district": "District 21",
+    "website": "https://costa.house.gov"
+  },
+  {
+    "name": "David Valadao",
+    "state": "California",
+    "district": "District 22",
+    "website": "https://valadao.house.gov"
+  },
+  {
+    "name": "Ray Obernolte",
+    "state": "California",
+    "district": "District 23",
+    "website": "https://obernolte.house.gov"
+  },
+  {
+    "name": "Salud Carbajal",
+    "state": "California",
+    "district": "District 24",
+    "website": "https://carbajal.house.gov"
+  },
+  {
+    "name": "Raul Ruiz",
+    "state": "California",
+    "district": "District 25",
+    "website": "https://ruiz.house.gov"
+  },
+  {
+    "name": "Julia Brownley",
+    "state": "California",
+    "district": "District 26",
+    "website": "https://brownley.house.gov"
+  },
+  {
+    "name": "George Whitesides",
+    "state": "California",
+    "district": "District 27",
+    "website": "https://whitesides.house.gov"
+  },
+  {
+    "name": "Judy Chu",
+    "state": "California",
+    "district": "District 28",
+    "website": "https://chu.house.gov"
+  },
+  {
+    "name": "Luz Rivas",
+    "state": "California",
+    "district": "District 29",
+    "website": "https://rivas.house.gov"
+  },
+  {
+    "name": "Laura Friedman",
+    "state": "California",
+    "district": "District 30",
+    "website": "https://friedman.house.gov"
+  },
+  {
+    "name": "Gilbert Cisneros",
+    "state": "California",
+    "district": "District 31",
+    "website": "https://cisneros.house.gov"
+  },
+  {
+    "name": "Brad Sherman",
+    "state": "California",
+    "district": "District 32",
+    "website": "https://sherman.house.gov"
+  },
+  {
+    "name": "Pete Aguilar",
+    "state": "California",
+    "district": "District 33",
+    "website": "https://aguilar.house.gov"
+  },
+  {
+    "name": "Jimmy Gomez",
+    "state": "California",
+    "district": "District 34",
+    "website": "https://gomez.house.gov"
+  },
+  {
+    "name": "Norma Torres",
+    "state": "California",
+    "district": "District 35",
+    "website": "https://torres.house.gov"
+  },
+  {
+    "name": "Ted Lieu",
+    "state": "California",
+    "district": "District 36",
+    "website": "https://lieu.house.gov"
+  },
+  {
+    "name": "Sydney Kamlager-Dove",
+    "state": "California",
+    "district": "District 37",
+    "website": "https://kamlager-dove.house.gov"
+  },
+  {
+    "name": "Linda Sánchez",
+    "state": "California",
+    "district": "District 38",
+    "website": "https://sanchez.house.gov"
+  },
+  {
+    "name": "Mark Takano",
+    "state": "California",
+    "district": "District 39",
+    "website": "https://takano.house.gov"
+  },
+  {
+    "name": "Young Kim",
+    "state": "California",
+    "district": "District 40",
+    "website": "https://kim.house.gov"
+  },
+  {
+    "name": "Ken Calvert",
+    "state": "California",
+    "district": "District 41",
+    "website": "https://calvert.house.gov"
+  },
+  {
+    "name": "Robert Garcia",
+    "state": "California",
+    "district": "District 42",
+    "website": "https://garcia.house.gov"
+  },
+  {
+    "name": "Maxine Waters",
+    "state": "California",
+    "district": "District 43",
+    "website": "https://waters.house.gov"
+  },
+  {
+    "name": "Nanette Barragan",
+    "state": "California",
+    "district": "District 44",
+    "website": "https://barragan.house.gov"
+  },
+  {
+    "name": "Derek Tran",
+    "state": "California",
+    "district": "District 45",
+    "website": "https://tran.house.gov"
+  },
+  {
+    "name": "J. Correa",
+    "state": "California",
+    "district": "District 46",
+    "website": "https://correa.house.gov"
+  },
+  {
+    "name": "Dave Min",
+    "state": "California",
+    "district": "District 47",
+    "website": "https://min.house.gov"
+  },
+  {
+    "name": "Darrel Issa",
+    "state": "California",
+    "district": "District 48",
+    "website": "https://issa.house.gov"
+  },
+  {
+    "name": "Mike Levin",
+    "state": "California",
+    "district": "District 49",
+    "website": "https://levin.house.gov"
+  },
+  {
+    "name": "Scott Peters",
+    "state": "California",
+    "district": "District 50",
+    "website": "https://peters.house.gov"
+  },
+  {
+    "name": "Sarah Jacobs",
+    "state": "California",
+    "district": "District 51",
+    "website": "https://jacobs.house.gov"
+  },
+  {
+    "name": "Juan Vargas",
+    "state": "California",
+    "district": "District 52",
+    "website": "https://varags.house.gov"
+  },
+  {
+    "name": "Diana DeGette",
+    "state": "Colorado",
+    "district": "District 1",
+    "website": "https://degette.house.gov"
+  },
+  {
+    "name": "Joe Neguse",
+    "state": "Colorado",
+    "district": "District 2",
+    "website": "https://neguse.house.gov"
+  },
+  {
+    "name": "Jedd Hurd",
+    "state": "Colorado",
+    "district": "District 3",
+    "website": "https://hurd.house.gov"
+  },
+  {
+    "name": "Lauren Boebert",
+    "state": "Colorado",
+    "district": "District 4",
+    "website": "https://boebert.house.gov"
+  },
+  {
+    "name": "Jeff Crank",
+    "state": "Colorado",
+    "district": "District 5",
+    "website": "https://crank.house.gov"
+  },
+  {
+    "name": "Jason Crow",
+    "state": "Colorado",
+    "district": "District 6",
+    "website": "https://crow.house.gov"
+  },
+  {
+    "name": "Brittany Pettersen",
+    "state": "Colorado",
+    "district": "District 7",
+    "website": "https://pettersen.house.gov"
+  },
+  {
+    "name": "Gabe Evans",
+    "state": "Colorado",
+    "district": "District 8",
+    "website": "https://evans.house.gov"
+  }
+]

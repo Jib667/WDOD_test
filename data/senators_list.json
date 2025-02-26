@@ -1,0 +1,502 @@
+[
+    {
+        "name": "Tommy Tuberville",
+        "state": "Alabama",
+        "website": "https://www.tuberville.senate.gov"
+    },
+    {
+        "name": "Katie Boyd Britt",
+        "state": "Alabama",
+        "website": "https://www.britt.senate.gov"
+    },
+    {
+        "name": "Lisa Murkowski",
+        "state": "Alaska",
+        "website": "https://www.murkowski.senate.gov"
+    },
+    {
+        "name": "Dan Sullivan",
+        "state": "Alaska",
+        "website": "https://www.sullivan.senate.gov"
+    },
+    {
+        "name": "Mark Kelly",
+        "state": "Arizona",
+        "website": "https://www.kelly.senate.gov"
+    },
+    {
+        "name": "Kyrsten Sinema",
+        "state": "Arizona",
+        "website": "https://www.sinema.senate.gov"
+    },
+    {
+        "name": "John Boozman",
+        "state": "Arkansas",
+        "website": "https://www.boozman.senate.gov"
+    },
+    {
+        "name": "Tom Cotton",
+        "state": "Arkansas",
+        "website": "https://www.cotton.senate.gov"
+    },
+    {
+        "name": "Alex Padilla",
+        "state": "California",
+        "website": "https://www.padilla.senate.gov"
+    },
+    {
+        "name": "Laphonza Butler",
+        "state": "California",
+        "website": "https://www.butler.senate.gov"
+    },
+    {
+        "name": "Michael Bennet",
+        "state": "Colorado",
+        "website": "https://www.bennet.senate.gov"
+    },
+    {
+        "name": "John Hickenlooper",
+        "state": "Colorado",
+        "website": "https://www.hickenlooper.senate.gov"
+    },
+    {
+        "name": "Richard Blumenthal",
+        "state": "Connecticut",
+        "website": "https://www.blumenthal.senate.gov"
+    },
+    {
+        "name": "Chris Murphy",
+        "state": "Connecticut",
+        "website": "https://www.murphy.senate.gov"
+    },
+    {
+        "name": "Tom Carper",
+        "state": "Delaware",
+        "website": "https://www.carper.senate.gov"
+    },
+    {
+        "name": "Chris Coons",
+        "state": "Delaware",
+        "website": "https://www.coons.senate.gov"
+    },
+    {
+        "name": "Marco Rubio",
+        "state": "Florida",
+        "website": "https://www.rubio.senate.gov"
+    },
+    {
+        "name": "Rick Scott",
+        "state": "Florida",
+        "website": "https://www.rickscott.senate.gov"
+    },
+    {
+        "name": "Jon Ossoff",
+        "state": "Georgia",
+        "website": "https://www.ossoff.senate.gov"
+    },
+    {
+        "name": "Raphael Warnock",
+        "state": "Georgia",
+        "website": "https://www.warnock.senate.gov"
+    },
+    {
+        "name": "Brian Schatz",
+        "state": "Hawaii",
+        "website": "https://www.schatz.senate.gov"
+    },
+    {
+        "name": "Mazie Hirono",
+        "state": "Hawaii",
+        "website": "https://www.hirono.senate.gov"
+    },
+    {
+        "name": "Mike Crapo",
+        "state": "Idaho",
+        "website": "https://www.crapo.senate.gov"
+    },
+    {
+        "name": "Jim Risch",
+        "state": "Idaho",
+        "website": "https://www.risch.senate.gov"
+    },
+    {
+        "name": "Dick Durbin",
+        "state": "Illinois",
+        "website": "https://www.durbin.senate.gov"
+    },
+    {
+        "name": "Tammy Duckworth",
+        "state": "Illinois",
+        "website": "https://www.duckworth.senate.gov"
+    },
+    {
+        "name": "Todd Young",
+        "state": "Indiana",
+        "website": "https://www.young.senate.gov"
+    },
+    {
+        "name": "Mike Braun",
+        "state": "Indiana",
+        "website": "https://www.braun.senate.gov"
+    },
+    {
+        "name": "Chuck Grassley",
+        "state": "Iowa",
+        "website": "https://www.grassley.senate.gov"
+    },
+    {
+        "name": "Joni Ernst",
+        "state": "Iowa",
+        "website": "https://www.ernst.senate.gov"
+    },
+    {
+        "name": "Jerry Moran",
+        "state": "Kansas",
+        "website": "https://www.moran.senate.gov"
+    },
+    {
+        "name": "Roger Marshall",
+        "state": "Kansas",
+        "website": "https://www.marshall.senate.gov"
+    },
+    {
+        "name": "Mitch McConnell",
+        "state": "Kentucky",
+        "website": "https://www.mcconnell.senate.gov"
+    },
+    {
+        "name": "Rand Paul",
+        "state": "Kentucky",
+        "website": "https://www.paul.senate.gov"
+    },
+    {
+        "name": "Bill Cassidy",
+        "state": "Louisiana",
+        "website": "https://www.cassidy.senate.gov"
+    },
+    {
+        "name": "John Kennedy",
+        "state": "Louisiana",
+        "website": "https://www.kennedy.senate.gov"
+    },
+    {
+        "name": "Susan Collins",
+        "state": "Maine",
+        "website": "https://www.collins.senate.gov"
+    },
+    {
+        "name": "Angus King",
+        "state": "Maine",
+        "website": "https://www.king.senate.gov"
+    },
+    {
+        "name": "Ben Cardin",
+        "state": "Maryland",
+        "website": "https://www.cardin.senate.gov"
+    },
+    {
+        "name": "Chris Van Hollen",
+        "state": "Maryland",
+        "website": "https://www.vanhollen.senate.gov"
+    },
+    {
+        "name": "Elizabeth Warren",
+        "state": "Massachusetts",
+        "website": "https://www.warren.senate.gov"
+    },
+    {
+        "name": "Ed Markey",
+        "state": "Massachusetts",
+        "website": "https://www.markey.senate.gov"
+    },
+    {
+        "name": "Debbie Stabenow",
+        "state": "Michigan",
+        "website": "https://www.stabenow.senate.gov"
+    },
+    {
+        "name": "Gary Peters",
+        "state": "Michigan",
+        "website": "https://www.peters.senate.gov"
+    },
+    {
+        "name": "Amy Klobuchar",
+        "state": "Minnesota",
+        "website": "https://www.klobuchar.senate.gov"
+    },
+    {
+        "name": "Tina Smith",
+        "state": "Minnesota",
+        "website": "https://www.smith.senate.gov"
+    },
+    {
+        "name": "Roger Wicker",
+        "state": "Mississippi",
+        "website": "https://www.wicker.senate.gov"
+    },
+    {
+        "name": "Cindy Hyde-Smith",
+        "state": "Mississippi",
+        "website": "https://www.hydesmith.senate.gov"
+    },
+    {
+        "name": "Josh Hawley",
+        "state": "Missouri",
+        "website": "https://www.hawley.senate.gov"
+    },
+    {
+        "name": "Eric Schmitt",
+        "state": "Missouri",
+        "website": "https://www.schmitt.senate.gov"
+    },
+    {
+        "name": "Jon Tester",
+        "state": "Montana",
+        "website": "https://www.tester.senate.gov"
+    },
+    {
+        "name": "Steve Daines",
+        "state": "Montana",
+        "website": "https://www.daines.senate.gov"
+    },
+    {
+        "name": "Deb Fischer",
+        "state": "Nebraska",
+        "website": "https://www.fischer.senate.gov"
+    },
+    {
+        "name": "Pete Ricketts",
+        "state": "Nebraska",
+        "website": "https://www.ricketts.senate.gov"
+    },
+    {
+        "name": "Catherine Cortez Masto",
+        "state": "Nevada",
+        "website": "https://www.cortezmasto.senate.gov"
+    },
+    {
+        "name": "Jacky Rosen",
+        "state": "Nevada",
+        "website": "https://www.rosen.senate.gov"
+    },
+    {
+        "name": "Jeanne Shaheen",
+        "state": "New Hampshire",
+        "website": "https://www.shaheen.senate.gov"
+    },
+    {
+        "name": "Maggie Hassan",
+        "state": "New Hampshire",
+        "website": "https://www.hassan.senate.gov"
+    },
+    {
+        "name": "Bob Menendez",
+        "state": "New Jersey",
+        "website": "https://www.menendez.senate.gov"
+    },
+    {
+        "name": "Cory Booker",
+        "state": "New Jersey",
+        "website": "https://www.booker.senate.gov"
+    },
+    {
+        "name": "Martin Heinrich",
+        "state": "New Mexico",
+        "website": "https://www.heinrich.senate.gov"
+    },
+    {
+        "name": "Ben Ray Luján",
+        "state": "New Mexico",
+        "website": "https://www.lujan.senate.gov"
+    },
+    {
+        "name": "Chuck Schumer",
+        "state": "New York",
+        "website": "https://www.schumer.senate.gov"
+    },
+    {
+        "name": "Kirsten Gillibrand",
+        "state": "New York",
+        "website": "https://www.gillibrand.senate.gov"
+    },
+    {
+        "name": "Thom Tillis",
+        "state": "North Carolina",
+        "website": "https://www.tillis.senate.gov"
+    },
+    {
+        "name": "Ted Budd",
+        "state": "North Carolina",
+        "website": "https://www.budd.senate.gov"
+    },
+    {
+        "name": "John Hoeven",
+        "state": "North Dakota",
+        "website": "https://www.hoeven.senate.gov"
+    },
+    {
+        "name": "Kevin Cramer",
+        "state": "North Dakota",
+        "website": "https://www.cramer.senate.gov"
+    },
+    {
+        "name": "Sherrod Brown",
+        "state": "Ohio",
+        "website": "https://www.brown.senate.gov"
+    },
+    {
+        "name": "JD Vance",
+        "state": "Ohio",
+        "website": "https://www.vance.senate.gov"
+    },
+    {
+        "name": "James Lankford",
+        "state": "Oklahoma",
+        "website": "https://www.lankford.senate.gov"
+    },
+    {
+        "name": "Markwayne Mullin",
+        "state": "Oklahoma",
+        "website": "https://www.mullin.senate.gov"
+    },
+    {
+        "name": "Ron Wyden",
+        "state": "Oregon",
+        "website": "https://www.wyden.senate.gov"
+    },
+    {
+        "name": "Jeff Merkley",
+        "state": "Oregon",
+        "website": "https://www.merkley.senate.gov"
+    },
+    {
+        "name": "Bob Casey Jr.",
+        "state": "Pennsylvania",
+        "website": "https://www.casey.senate.gov"
+    },
+    {
+        "name": "John Fetterman",
+        "state": "Pennsylvania",
+        "website": "https://www.fetterman.senate.gov"
+    },
+    {
+        "name": "Jack Reed",
+        "state": "Rhode Island",
+        "website": "https://www.reed.senate.gov"
+    },
+    {
+        "name": "Sheldon Whitehouse",
+        "state": "Rhode Island",
+        "website": "https://www.whitehouse.senate.gov"
+    },
+    {
+        "name": "Lindsey Graham",
+        "state": "South Carolina",
+        "website": "https://www.lgraham.senate.gov"
+    },
+    {
+        "name": "Tim Scott",
+        "state": "South Carolina",
+        "website": "https://www.scott.senate.gov"
+    },
+    {
+        "name": "John Thune",
+        "state": "South Dakota",
+        "website": "https://www.thune.senate.gov"
+    },
+    {
+        "name": "Mike Rounds",
+        "state": "South Dakota",
+        "website": "https://www.rounds.senate.gov"
+    },
+    {
+        "name": "Marsha Blackburn",
+        "state": "Tennessee",
+        "website": "https://www.blackburn.senate.gov"
+    },
+    {
+        "name": "Bill Hagerty",
+        "state": "Tennessee",
+        "website": "https://www.hagerty.senate.gov"
+    },
+    {
+        "name": "John Cornyn",
+        "state": "Texas",
+        "website": "https://www.cornyn.senate.gov"
+    },
+    {
+        "name": "Ted Cruz",
+        "state": "Texas",
+        "website": "https://www.cruz.senate.gov"
+    },
+    {
+        "name": "Mike Lee",
+        "state": "Utah",
+        "website": "https://www.lee.senate.gov"
+    },
+    {
+        "name": "Mitt Romney",
+        "state": "Utah",
+        "website": "https://www.romney.senate.gov"
+    },
+    {
+        "name": "Bernie Sanders",
+        "state": "Vermont",
+        "website": "https://www.sanders.senate.gov"
+    },
+    {
+        "name": "Peter Welch",
+        "state": "Vermont",
+        "website": "https://www.welch.senate.gov"
+    },
+    {
+        "name": "Mark Warner",
+        "state": "Virginia",
+        "website": "https://www.warner.senate.gov"
+    },
+    {
+        "name": "Tim Kaine",
+        "state": "Virginia",
+        "website": "https://www.kaine.senate.gov"
+    },
+    {
+        "name": "Patty Murray",
+        "state": "Washington",
+        "website": "https://www.murray.senate.gov"
+    },
+    {
+        "name": "Maria Cantwell",
+        "state": "Washington",
+        "website": "https://www.cantwell.senate.gov"
+    },
+    {
+        "name": "Joe Manchin",
+        "state": "West Virginia",
+        "website": "https://www.manchin.senate.gov"
+    },
+    {
+        "name": "Shelley Moore Capito",
+        "state": "West Virginia",
+        "website": "https://www.capito.senate.gov"
+    },
+    {
+        "name": "Ron Johnson",
+        "state": "Wisconsin",
+        "website": "https://www.ronjohnson.senate.gov"
+    },
+    {
+        "name": "Tammy Baldwin",
+        "state": "Wisconsin",
+        "website": "https://www.baldwin.senate.gov"
+    },
+    {
+        "name": "John Barrasso",
+        "state": "Wyoming",
+        "website": "https://www.barrasso.senate.gov"
+    },
+    {
+        "name": "Cynthia Lummis",
+        "state": "Wyoming",
+        "website": "https://www.lummis.senate.gov"
+    }
+]

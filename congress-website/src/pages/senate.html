@@ -956,14 +956,12 @@
                     }
                 }
 
-                // Use CartoDB Positron for a clean, white base map
                 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
                     maxZoom: 19,
                     attribution: '© OpenStreetMap contributors, © CARTO',
                     className: 'map-tiles'
                 }).addTo(map);
 
-                // Add custom styles for popups
                 const style = document.createElement('style');
                 style.textContent = `
                     .map-tiles {
@@ -1168,7 +1166,6 @@
                 `;
                 document.head.appendChild(style);
 
-                // Add state boundaries with purple styling and click events
                 fetch('https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json')
                     .then(response => response.json())
                     .then(data => {
@@ -1212,7 +1209,6 @@
                         }).addTo(map);
                     });
 
-                // Add state abbreviation helper function
                 function getStateAbbreviation(stateName) {
                     const stateAbbreviations = {
                         'Alabama': 'AL', 'Alaska': 'AK', 'Arizona': 'AZ', 'Arkansas': 'AR',
