@@ -2,7 +2,7 @@ import requests
 import json
 
 # API configuration
-API_KEY = "GQa0ssyeDhRJvwToYWQCcYO7gQY7Vb2OSn0rstQw"
+API_KEY = "YOUR-API-KEY-HERE"
 BASE_URL = "https://api.congress.gov/v3"
 HEADERS = {'X-API-Key': API_KEY}
 
