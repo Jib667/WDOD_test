@@ -1,4 +1,4 @@
-=<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -258,6 +258,60 @@
                 font-size: 14px;
                 font-weight: 500;
             }
+
+            .party-label.democrat {
+                color: #0044cc;  /* Democratic blue */
+            }
+
+            .party-label.republican {
+                color: #cc0000;  /* Republican red */
+            }
+
+            .party-label.independent {
+                color: #4B0082;  /* Keep the existing purple for independents */
+            }
+
+            .party-tag.democrat {
+                background-color: #0044cc;
+                color: white;
+            }
+
+            .party-tag.republican {
+                background-color: #cc0000;
+                color: white;
+            }
+
+            .party-tag.independent {
+                background-color: #4B0082;
+                color: white;
+            }
+
+            .senator-item:hover .party-label.democrat {
+                color: white;
+            }
+
+            .senator-item:hover .party-label.republican {
+                color: white;
+            }
+
+            .senator-item:hover .party-label.independent {
+                color: white;
+            }
+
+            .senator-item.democrat:hover {
+                background-color: #0044cc;
+                color: white;
+            }
+
+            .senator-item.republican:hover {
+                background-color: #cc0000;
+                color: white;
+            }
+
+            .senator-item.independent:hover {
+                background-color: #4B0082;
+                color: white;
+            }
             </style>
             <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
             <script>
@@ -324,601 +378,601 @@
                     if (stateName === 'Alabama') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Tommy Tuberville', 'Republican', '../img/tommy_tuberville.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Tommy Tuberville', 'Republican', '../img/tommy_tuberville.jpg'); return false;">
                                     <span class="senator-name">Tommy Tuberville</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Katie Boyd Britt', 'Republican', '../img/katie_boyd_britt.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Katie Boyd Britt', 'Republican', '../img/katie_boyd_britt.jpg'); return false;">
                                     <span class="senator-name">Katie Boyd Britt</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Alaska') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Lisa Murkowski', 'Republican', '../img/lisa_murkowski.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Lisa Murkowski', 'Republican', '../img/lisa_murkowski.jpg'); return false;">
                                     <span class="senator-name">Lisa Murkowski</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Dan Sullivan', 'Republican', '../img/dan_sullivan.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Dan Sullivan', 'Republican', '../img/dan_sullivan.jpg'); return false;">
                                     <span class="senator-name">Dan Sullivan</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Arizona') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Mark Kelly', 'Democrat', '../img/mark_kelly.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Mark Kelly', 'Democrat', '../img/mark_kelly.jpg'); return false;">
                                     <span class="senator-name">Mark Kelly</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Ruben Gallego', 'Democrat', '../img/ruben_gallego.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Ruben Gallego', 'Democrat', '../img/ruben_gallego.jpg'); return false;">
                                     <span class="senator-name">Ruben Gallego</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'California') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Alex Padilla', 'Democrat', '../img/alex_padilla.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Alex Padilla', 'Democrat', '../img/alex_padilla.jpg'); return false;">
                                     <span class="senator-name">Alex Padilla</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Adam Schiff', 'Democrat', '../img/adam_schiff.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Adam Schiff', 'Democrat', '../img/adam_schiff.jpg'); return false;">
                                     <span class="senator-name">Adam Schiff</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Arkansas') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('John Boozman', 'Republican', '../img/john_boozman.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('John Boozman', 'Republican', '../img/john_boozman.jpg'); return false;">
                                     <span class="senator-name">John Boozman</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Tom Cotton', 'Republican', '../img/tom_cotton.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Tom Cotton', 'Republican', '../img/tom_cotton.jpg'); return false;">
                                     <span class="senator-name">Tom Cotton</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Colorado') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Michael Bennet', 'Democrat', '../img/michael_bennet.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Michael Bennet', 'Democrat', '../img/michael_bennet.jpg'); return false;">
                                     <span class="senator-name">Michael Bennet</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('John Hickenlooper', 'Democrat', '../img/john_hickenlooper.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('John Hickenlooper', 'Democrat', '../img/john_hickenlooper.jpg'); return false;">
                                     <span class="senator-name">John Hickenlooper</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Connecticut') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Richard Blumenthal', 'Democrat', '../img/richard_blumenthal.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Richard Blumenthal', 'Democrat', '../img/richard_blumenthal.jpg'); return false;">
                                     <span class="senator-name">Richard Blumenthal</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Christopher Murphy', 'Democrat', '../img/christopher_murphy.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Christopher Murphy', 'Democrat', '../img/christopher_murphy.jpg'); return false;">
                                     <span class="senator-name">Christopher Murphy</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Delaware') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Christopher Coons', 'Democrat', '../img/christopher_coons.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Christopher Coons', 'Democrat', '../img/christopher_coons.jpg'); return false;">
                                     <span class="senator-name">Christopher Coons</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Lisa Blunt Rochester', 'Democrat', '../img/lisa_blunt_rochester.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Lisa Blunt Rochester', 'Democrat', '../img/lisa_blunt_rochester.jpg'); return false;">
                                     <span class="senator-name">Lisa Blunt Rochester</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Florida') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Rick Scott', 'Republican', '../img/rick_scott.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Rick Scott', 'Republican', '../img/rick_scott.jpg'); return false;">
                                     <span class="senator-name">Rick Scott</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Ashley Moody', 'Republican', '../img/ashley_moody.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Ashley Moody', 'Republican', '../img/ashley_moody.jpg'); return false;">
                                     <span class="senator-name">Ashley Moody</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Georgia') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Jon Ossoff', 'Democrat', '../img/jon_ossoff.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Jon Ossoff', 'Democrat', '../img/jon_ossoff.jpg'); return false;">
                                     <span class="senator-name">Jon Ossoff</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Raphael Warnock', 'Democrat', '../img/raphael_warnock.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Raphael Warnock', 'Democrat', '../img/raphael_warnock.jpg'); return false;">
                                     <span class="senator-name">Raphael Warnock</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Hawaii') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Brian Schatz', 'Democrat', '../img/brian_schatz.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Brian Schatz', 'Democrat', '../img/brian_schatz.jpg'); return false;">
                                     <span class="senator-name">Brian Schatz</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Mazie Hirono', 'Democrat', '../img/mazie_hirono.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Mazie Hirono', 'Democrat', '../img/mazie_hirono.jpg'); return false;">
                                     <span class="senator-name">Mazie Hirono</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Idaho') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Mike Crapo', 'Republican', '../img/mike_crapo.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Mike Crapo', 'Republican', '../img/mike_crapo.jpg'); return false;">
                                     <span class="senator-name">Mike Crapo</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Jim Risch', 'Republican', '../img/jim_risch.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Jim Risch', 'Republican', '../img/jim_risch.jpg'); return false;">
                                     <span class="senator-name">Jim Risch</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Illinois') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Dick Durbin', 'Democrat', '../img/dick_durbin.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Dick Durbin', 'Democrat', '../img/dick_durbin.jpg'); return false;">
                                     <span class="senator-name">Dick Durbin</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Tammy Duckworth', 'Democrat', '../img/tammy_duckworth.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Tammy Duckworth', 'Democrat', '../img/tammy_duckworth.jpg'); return false;">
                                     <span class="senator-name">Tammy Duckworth</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Indiana') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Todd Young', 'Republican', '../img/todd_young.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Todd Young', 'Republican', '../img/todd_young.jpg'); return false;">
                                     <span class="senator-name">Todd Young</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Jim Banks', 'Republican', '../img/jim_banks.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Jim Banks', 'Republican', '../img/jim_banks.jpg'); return false;">
                                     <span class="senator-name">Jim Banks</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Iowa') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Chuck Grassley', 'Republican', '../img/chuck_grassley.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Chuck Grassley', 'Republican', '../img/chuck_grassley.jpg'); return false;">
                                     <span class="senator-name">Chuck Grassley</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Joni Ernst', 'Republican', '../img/joni_ernst.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Joni Ernst', 'Republican', '../img/joni_ernst.jpg'); return false;">
                                     <span class="senator-name">Joni Ernst</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Kansas') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Jerry Moran', 'Republican', '../img/jerry_moran.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Jerry Moran', 'Republican', '../img/jerry_moran.jpg'); return false;">
                                     <span class="senator-name">Jerry Moran</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Roger Marshall', 'Republican', '../img/roger_marshall.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Roger Marshall', 'Republican', '../img/roger_marshall.jpg'); return false;">
                                     <span class="senator-name">Roger Marshall</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Kentucky') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Mitch McConnell', 'Republican', '../img/mitch_mcconnell.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Mitch McConnell', 'Republican', '../img/mitch_mcconnell.jpg'); return false;">
                                     <span class="senator-name">Mitch McConnell</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Rand Paul', 'Republican', '../img/rand_paul.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Rand Paul', 'Republican', '../img/rand_paul.jpg'); return false;">
                                     <span class="senator-name">Rand Paul</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Louisiana') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Bill Cassidy', 'Republican', '../img/bill_cassidy.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Bill Cassidy', 'Republican', '../img/bill_cassidy.jpg'); return false;">
                                     <span class="senator-name">Bill Cassidy</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('John Kennedy', 'Republican', '../img/john_kennedy.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('John Kennedy', 'Republican', '../img/john_kennedy.jpg'); return false;">
                                     <span class="senator-name">John Kennedy</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Maine') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Susan Collins', 'Republican', '../img/susan_collins.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Susan Collins', 'Republican', '../img/susan_collins.jpg'); return false;">
                                     <span class="senator-name">Susan Collins</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Angus King Jr.', 'Independent', '../img/angus_king.jpg'); return false;">
+                                <a href="#" class="senator-item independent" onclick="showSenatorCard('Angus King Jr.', 'Independent', '../img/angus_king.jpg'); return false;">
                                     <span class="senator-name">Angus King Jr.</span>
-                                    <span class="party-label">(I)</span>
+                                    <span class="party-label independent">(I)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Maryland') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Chris Van Hollen', 'Democrat', '../img/chris_van_hollen.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Chris Van Hollen', 'Democrat', '../img/chris_van_hollen.jpg'); return false;">
                                     <span class="senator-name">Chris Van Hollen</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Angela Alsobrooks', 'Democrat', '../img/angela_alsobrooks.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Angela Alsobrooks', 'Democrat', '../img/angela_alsobrooks.jpg'); return false;">
                                     <span class="senator-name">Angela Alsobrooks</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Massachusetts') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Elizabeth Warren', 'Democrat', '../img/elizabeth_warren.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Elizabeth Warren', 'Democrat', '../img/elizabeth_warren.jpg'); return false;">
                                     <span class="senator-name">Elizabeth Warren</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Ed Markey', 'Democrat', '../img/ed_markey.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Ed Markey', 'Democrat', '../img/ed_markey.jpg'); return false;">
                                     <span class="senator-name">Ed Markey</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Michigan') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Gary Peters', 'Democrat', '../img/gary_peters.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Gary Peters', 'Democrat', '../img/gary_peters.jpg'); return false;">
                                     <span class="senator-name">Gary Peters</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Elissa Slotkin', 'Democrat', '../img/elissa_slotkin.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Elissa Slotkin', 'Democrat', '../img/elissa_slotkin.jpg'); return false;">
                                     <span class="senator-name">Elissa Slotkin</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Minnesota') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Amy Klobuchar', 'Democrat', '../img/amy_klobuchar.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Amy Klobuchar', 'Democrat', '../img/amy_klobuchar.jpg'); return false;">
                                     <span class="senator-name">Amy Klobuchar</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Tina Smith', 'Democrat', '../img/tina_smith.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Tina Smith', 'Democrat', '../img/tina_smith.jpg'); return false;">
                                     <span class="senator-name">Tina Smith</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Mississippi') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Roger Wicker', 'Republican', '../img/roger_wicker.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Roger Wicker', 'Republican', '../img/roger_wicker.jpg'); return false;">
                                     <span class="senator-name">Roger Wicker</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Cindy Hyde-Smith', 'Republican', '../img/cindy_hyde-smith.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Cindy Hyde-Smith', 'Republican', '../img/cindy_hyde-smith.jpg'); return false;">
                                     <span class="senator-name">Cindy Hyde-Smith</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Missouri') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Josh Hawley', 'Republican', '../img/josh_hawley.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Josh Hawley', 'Republican', '../img/josh_hawley.jpg'); return false;">
                                     <span class="senator-name">Josh Hawley</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Eric Schmitt', 'Republican', '../img/eric_schmitt.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Eric Schmitt', 'Republican', '../img/eric_schmitt.jpg'); return false;">
                                     <span class="senator-name">Eric Schmitt</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Montana') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Steve Daines', 'Republican', '../img/steve_daines.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Steve Daines', 'Republican', '../img/steve_daines.jpg'); return false;">
                                     <span class="senator-name">Steve Daines</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Tim Sheehy', 'Republican', '../img/tim_sheehy.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Tim Sheehy', 'Republican', '../img/tim_sheehy.jpg'); return false;">
                                     <span class="senator-name">Tim Sheehy</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Nebraska') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Deb Fischer', 'Republican', '../img/deb_fischer.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Deb Fischer', 'Republican', '../img/deb_fischer.jpg'); return false;">
                                     <span class="senator-name">Deb Fischer</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Pete Ricketts', 'Republican', '../img/pete_ricketts.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Pete Ricketts', 'Republican', '../img/pete_ricketts.jpg'); return false;">
                                     <span class="senator-name">Pete Ricketts</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Nevada') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Catherine Cortez Masto', 'Democrat', '../img/catherine_cortez_masto.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Catherine Cortez Masto', 'Democrat', '../img/catherine_cortez_masto.jpg'); return false;">
                                     <span class="senator-name">Catherine Cortez Masto</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Jacky Rosen', 'Democrat', '../img/jacky_rosen.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Jacky Rosen', 'Democrat', '../img/jacky_rosen.jpg'); return false;">
                                     <span class="senator-name">Jacky Rosen</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'New Hampshire') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Jeanne Shaheen', 'Democrat', '../img/jeanne_shaheen.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Jeanne Shaheen', 'Democrat', '../img/jeanne_shaheen.jpg'); return false;">
                                     <span class="senator-name">Jeanne Shaheen</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Maggie Hassan', 'Democrat', '../img/maggie_hassan.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Maggie Hassan', 'Democrat', '../img/maggie_hassan.jpg'); return false;">
                                     <span class="senator-name">Maggie Hassan</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'New Jersey') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Cory Booker', 'Democrat', '../img/cory_booker.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Cory Booker', 'Democrat', '../img/cory_booker.jpg'); return false;">
                                     <span class="senator-name">Cory Booker</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Andy Kim', 'Democrat', '../img/andy_kim.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Andy Kim', 'Democrat', '../img/andy_kim.jpg'); return false;">
                                     <span class="senator-name">Andy Kim</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'New Mexico') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Martin Heinrich', 'Democrat', '../img/martin_heinrich.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Martin Heinrich', 'Democrat', '../img/martin_heinrich.jpg'); return false;">
                                     <span class="senator-name">Martin Heinrich</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Ben Ray Luján', 'Democrat', '../img/ben_ray_lujan.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Ben Ray Luján', 'Democrat', '../img/ben_ray_lujan.jpg'); return false;">
                                     <span class="senator-name">Ben Ray Luján</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'New York') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Chuck Schumer', 'Democrat', '../img/chuck_schumer.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Chuck Schumer', 'Democrat', '../img/chuck_schumer.jpg'); return false;">
                                     <span class="senator-name">Chuck Schumer</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Kirsten Gillibrand', 'Democrat', '../img/kirsten_gillibrand.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Kirsten Gillibrand', 'Democrat', '../img/kirsten_gillibrand.jpg'); return false;">
                                     <span class="senator-name">Kirsten Gillibrand</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'North Carolina') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Thom Tillis', 'Republican', '../img/thom_tillis.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Thom Tillis', 'Republican', '../img/thom_tillis.jpg'); return false;">
                                     <span class="senator-name">Thom Tillis</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Ted Budd', 'Republican', '../img/ted_budd.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Ted Budd', 'Republican', '../img/ted_budd.jpg'); return false;">
                                     <span class="senator-name">Tedd Budd</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'North Dakota') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('John Hoeven', 'Republican', '../img/john_hoeven.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('John Hoeven', 'Republican', '../img/john_hoeven.jpg'); return false;">
                                     <span class="senator-name">John Hoeven</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Kevin Cramer', 'Republican', '../img/kevin_cramer.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Kevin Cramer', 'Republican', '../img/kevin_cramer.jpg'); return false;">
                                     <span class="senator-name">Kevin Cramer</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Ohio') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Bernie Moreno', 'Republican', '../img/bernie_moreno.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Bernie Moreno', 'Republican', '../img/bernie_moreno.jpg'); return false;">
                                     <span class="senator-name">Bernie Moreno</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Jon Husted', 'Republican', '../img/jon_husted.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Jon Husted', 'Republican', '../img/jon_husted.jpg'); return false;">
                                     <span class="senator-name">Jon Husted</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Oklahoma') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('James Lankford', 'Republican', '../img/james_lankford.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('James Lankford', 'Republican', '../img/james_lankford.jpg'); return false;">
                                     <span class="senator-name">James Lankford</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Markwayne Mullin', 'Republican', '../img/markwayne_mullin.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Markwayne Mullin', 'Republican', '../img/markwayne_mullin.jpg'); return false;">
                                     <span class="senator-name">Markwayne Mullin</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Oregon') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Ron Wyden', 'Democrat', '../img/ron_wyden.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Ron Wyden', 'Democrat', '../img/ron_wyden.jpg'); return false;">
                                     <span class="senator-name">Ron Wyden</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Jeff Merkley', 'Democrat', '../img/jeff_merkley.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Jeff Merkley', 'Democrat', '../img/jeff_merkley.jpg'); return false;">
                                     <span class="senator-name">Jeff Merkley</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Pennsylvania') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('John Fetterman', 'Democrat', '../img/john_fetterman.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('John Fetterman', 'Democrat', '../img/john_fetterman.jpg'); return false;">
                                     <span class="senator-name">John Fetterman</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('David McCormick', 'Republican', '../img/david_mccormick.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('David McCormick', 'Republican', '../img/david_mccormick.jpg'); return false;">
                                     <span class="senator-name">David McCormick</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Rhode Island') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Jack Reed', 'Democrat', '../img/jack_reed.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Jack Reed', 'Democrat', '../img/jack_reed.jpg'); return false;">
                                     <span class="senator-name">Jack Reed</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Sheldon Whitehouse', 'Democrat', '../img/sheldon_whitehouse.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Sheldon Whitehouse', 'Democrat', '../img/sheldon_whitehouse.jpg'); return false;">
                                     <span class="senator-name">Sheldon Whitehouse</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'South Carolina') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Lindsey Graham', 'Republican', '../img/lindsey_graham.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Lindsey Graham', 'Republican', '../img/lindsey_graham.jpg'); return false;">
                                     <span class="senator-name">Lindsey Graham</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Tim Scott', 'Republican', '../img/tim_scott.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Tim Scott', 'Republican', '../img/tim_scott.jpg'); return false;">
                                     <span class="senator-name">Tim Scott</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'South Dakota') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('John Thune', 'Republican', '../img/john_thune.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('John Thune', 'Republican', '../img/john_thune.jpg'); return false;">
                                     <span class="senator-name">John Thune</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Mike Rounds', 'Republican', '../img/mike_rounds.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Mike Rounds', 'Republican', '../img/mike_rounds.jpg'); return false;">
                                     <span class="senator-name">Mike Rounds</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Tennessee') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Marsha Blackburn', 'Republican', '../img/marsha_blackburn.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Marsha Blackburn', 'Republican', '../img/marsha_blackburn.jpg'); return false;">
                                     <span class="senator-name">Marsha Blackburn</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Bill Hagerty', 'Republican', '../img/bill_hagerty.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Bill Hagerty', 'Republican', '../img/bill_hagerty.jpg'); return false;">
                                     <span class="senator-name">Bill Hagerty</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Texas') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('John Cornyn', 'Republican', '../img/john_cornyn.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('John Cornyn', 'Republican', '../img/john_cornyn.jpg'); return false;">
                                     <span class="senator-name">John Cornyn</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Ted Cruz', 'Republican', '../img/ted_cruz.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Ted Cruz', 'Republican', '../img/ted_cruz.jpg'); return false;">
                                     <span class="senator-name">Ted Cruz</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Utah') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Mike Lee', 'Republican', '../img/mike_lee.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Mike Lee', 'Republican', '../img/mike_lee.jpg'); return false;">
                                     <span class="senator-name">Mike Lee</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('John Curtis', 'Republican', '../img/john_curtis.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('John Curtis', 'Republican', '../img/john_curtis.jpg'); return false;">
                                     <span class="senator-name">John Curtis</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Vermont') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Bernie Sanders', 'Independent', '../img/bernie_sanders.jpg'); return false;">
+                                <a href="#" class="senator-item independent" onclick="showSenatorCard('Bernie Sanders', 'Independent', '../img/bernie_sanders.jpg'); return false;">
                                     <span class="senator-name">Bernie Sanders</span>
-                                    <span class="party-label">(I)</span>
+                                    <span class="party-label independent">(I)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Peter Welch', 'Democrat', '../img/peter_welch.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Peter Welch', 'Democrat', '../img/peter_welch.jpg'); return false;">
                                     <span class="senator-name">Peter Welch</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Virginia') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Mark Warner', 'Democrat', '../img/mark_warner.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Mark Warner', 'Democrat', '../img/mark_warner.jpg'); return false;">
                                     <span class="senator-name">Mark Warner</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Tim Kaine', 'Democrat', '../img/tim_kaine.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Tim Kaine', 'Democrat', '../img/tim_kaine.jpg'); return false;">
                                     <span class="senator-name">Tim Kaine</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Washington') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Patty Murray', 'Democrat', '../img/patty_murray.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Patty Murray', 'Democrat', '../img/patty_murray.jpg'); return false;">
                                     <span class="senator-name">Patty Murray</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Maria Cantwell', 'Democrat', '../img/maria_cantwell.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Maria Cantwell', 'Democrat', '../img/maria_cantwell.jpg'); return false;">
                                     <span class="senator-name">Maria Cantwell</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'West Virginia') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Shelley Moore Capito', 'Republican', '../img/shelley_moore_capito.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Shelley Moore Capito', 'Republican', '../img/shelley_moore_capito.jpg'); return false;">
                                     <span class="senator-name">Shelley Moore Capito</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('James Justice', 'Republican', '../img/james_justice.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('James Justice', 'Republican', '../img/james_justice.jpg'); return false;">
                                     <span class="senator-name">James Justice</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Wisconsin') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Ron Johnson', 'Republican', '../img/ron_johnson.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Ron Johnson', 'Republican', '../img/ron_johnson.jpg'); return false;">
                                     <span class="senator-name">Ron Johnson</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Tammy Baldwin', 'Democrat', '../img/tammy_baldwin.jpg'); return false;">
+                                <a href="#" class="senator-item democrat" onclick="showSenatorCard('Tammy Baldwin', 'Democrat', '../img/tammy_baldwin.jpg'); return false;">
                                     <span class="senator-name">Tammy Baldwin</span>
-                                    <span class="party-label">(D)</span>
+                                    <span class="party-label democrat">(D)</span>
                                 </a>
                             </div>`;
                     } else if (stateName === 'Wyoming') {
                         list += `
                             <div class="senator-list">
-                                <a href="#" class="senator-item" onclick="showSenatorCard('Cynthia Lummis', 'Republican', '../img/cynthia_lummis.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('Cynthia Lummis', 'Republican', '../img/cynthia_lummis.jpg'); return false;">
                                     <span class="senator-name">Cynthia Lummis</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
-                                <a href="#" class="senator-item" onclick="showSenatorCard('John Barrasso', 'Republican', '../img/john_barrasso.jpg'); return false;">
+                                <a href="#" class="senator-item republican" onclick="showSenatorCard('John Barrasso', 'Republican', '../img/john_barrasso.jpg'); return false;">
                                     <span class="senator-name">John Barrasso</span>
-                                    <span class="party-label">(R)</span>
+                                    <span class="party-label republican">(R)</span>
                                 </a>
                             </div>`;
                     }else {
@@ -933,6 +987,7 @@
                 }
 
                 function showSenatorCard(name, party, imageUrl) {
+                    const partyClass = party.toLowerCase();
                     const cardHtml = `
                         <div class="senator-overlay" onclick="closeSenatorCard(event)">
                             <div class="senator-card-large">
@@ -940,7 +995,7 @@
                                 <img src="${imageUrl || '../img/placeholder.jpg'}" alt="${name}" class="senator-image-large">
                                 <div class="senator-info-large">
                                     <h3>${name}</h3>
-                                    <span class="party-tag-large">${party}</span>
+                                    <span class="party-tag ${partyClass}">${party}</span>
                                 </div>
                             </div>
                         </div>`;
@@ -1230,7 +1285,7 @@
             </script>
         </main>
         <footer>
-            <p>&copy; 2023 Congress Website</p>
+            <p>&copy; 2025 Watchdogs of Democracy</p>
         </footer>
     </div>
     <script src="../js/main.js"></script>
